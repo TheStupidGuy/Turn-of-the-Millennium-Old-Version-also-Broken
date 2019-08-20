@@ -3,5 +3,5 @@ create_country_leader = {
   	desc = "POLITICS_FRIEDRICH_WILHELM_IV_DESC"
   	picture = "Portrait_PRU_Fredrick_William III.dds"
   	expire = "1840.7.5"
-  	ideology = authoritarian 
+  	ideology = Absolute Monarchy
   	traits = {dislikes_france }
