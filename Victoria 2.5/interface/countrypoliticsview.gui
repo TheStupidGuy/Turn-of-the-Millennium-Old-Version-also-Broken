@@ -2,8 +2,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrypoliticsview"
-		position = { x=-606 y=78}	
-		show_position = { x=-6 y =78 }
+		position = { x=-606 y=148}	
+		show_position = { x=-6 y =148 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
@@ -20,15 +20,15 @@ guiTypes = {
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 5 y = 07 }
+			position = { x= 5 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}	
 
 		instantTextboxType = {
 			name = "political_title"
-			position = { x = 45 y = 8 }
+			position = { x = 45 y = 7 }
 			textureFile = ""
-			font = "hoi_36header"
+			font = "vic_36"
 			borderSize = {x = 0 y = 0}
 			text = "POLITICAL_POLITICAL"
 			maxWidth = 400
@@ -46,29 +46,27 @@ guiTypes = {
 		iconType ={
 			name ="pol_faction_icon"
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 19 y = 305 }
+			position = { x= 30 y = 299 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 300 y = 298 }
-			size = { width = 245 height = 79 }
-			clipping = yes
-			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 3 bottom = 2 }
-			background = {
-				name = "Background"		
-				spriteType ="GFX_pol_piechart_bg"
-				position = { x = 37 y = 3 }
-			}
+			position = { x = 18 y = 112 }
+			size = { width = 330 height = 70 }
+			clipping = no
+			
+#			background = {
+#				name = "Background"		
+#				spriteType ="GFX_pol_piechart_bg"
+#			}
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = -20 y = -5 }
-				size = { width = 230 height = 80 }
-				slotsize = { width = 230 height = 14 }
+				position = { x = 260 y = 184 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 230 height = 16 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -76,7 +74,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "political_pie_chart"
-			position = { x= 270 y = 304 }
+			position = { x= 270 y = 299 }
 			size = { width=100 height=100 }
 			clipping = no
 
@@ -155,8 +153,8 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "ideology"
-				position = { x = 9 y = 8 }
-				font = "hoi_18mbs"
+				position = { x = 19 y = -5 }
+				font = "vic_18_black"
 				text = "ideology"
 				maxWidth = 155
 				maxHeight = 20
@@ -164,8 +162,8 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 9 y = 34 }
-				font = "hoi_16mbs"
+				position = { x = 19 y = 23 }
+				font = "vic_18_black"
 				text = "elections"
 				maxWidth = 155
 				maxHeight = 20
@@ -174,7 +172,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "faction_name"
 				position = { x = 103 y = -45 }
-				font = "hoi_18mbs"
+				font = "vic_22"
 				text = "faction"
 				maxWidth = 193
 				maxHeight = 20
@@ -205,7 +203,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "current_autonomy_name"
 				position = { x = 110 y = 8 }
-				font = "hoi_18mbs"
+				font = "vic_18"
 				text = "autonomy"
 				maxWidth = 193
 				maxHeight = 20		
@@ -284,7 +282,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "active_goal"
-			position = { x = 179 y = 48 }
+			position = { x = 165 y = 59 }
 			size = { width = 330 height = 50 }
 			clipping = no
 						
@@ -326,14 +324,14 @@ guiTypes = {
 
 			iconType = {
 				name = "continuous_glow"
-				position = { x = -16 y = -6 }
+				position = { x = -2 y = -8 }
 				quadTextureSprite = "GFX_ongoing_focus_goal_polview"
 				scale = 0.9
 			}
 			
 			iconType = {
 				name = "goal_icon"
-				position = { x = 47 y = 48 }
+				position = { x = 58 y = 50 }
 				centerposition = yes			
 				spriteType = "GFX_goal_unknown"
 			}
@@ -364,7 +362,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "title"
 				position = { x = 128 y = 34 }
-				font = "hoi_18mbs"
+				font = "vic_22"
 				text = "POLITICS_ACTIVE_GOAL"
 				maxWidth = 200
 				maxHeight = 20
@@ -394,8 +392,8 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "title"
-				position = { x = 110 y = -2 }
-				font = "hoi_18mbs"
+				position = { x = 110 y = -6 }
+				font = "vic_18_black"
 				text = "POLITICS_NATIONAL_SPIRIT"
 				maxWidth = 200
 				maxHeight = 20
@@ -403,7 +401,7 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "spirit_grid"
-				position = { x = 98 y = 22 }
+				position = { x = 98 y = 14 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 60 height = 68 }
 				max_slots = { x = 8 y = 1 }
@@ -421,21 +419,21 @@ guiTypes = {
 		}
 		iconType = {
 			name = "leader"
-			position = { x = 18 y = 58 }
+			position = { x = 10 y = 53 }
 			spriteType = "GFX_leader_unknown"
 		}
 		
 		iconType = {
 			name = "leader_frame2"
 			spriteType = "GFX_pol_leader_frame"
-			position = { x = 10 y = 44 }		
+			position = { x = 2 y = 40 }		
 			allwaystransparent = yes
 		}
 
 		instantTextboxType = {
 			name = "leader_name"
-			position = { x = 18 y = 271 }
-			font = "hoi_18mbs"
+			position = { x = 14 y = 268 }
+			font = "vic_22"
 			text = "leader_name"
 			maxWidth = 155
 			maxHeight = 20
@@ -479,7 +477,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -42 y = 9 }
+			position = { x = -42 y = 8 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -514,7 +512,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "manage_occupied_button_text"
 			position = { x = 50 y = 398 }
-			font = "hoi_16mbs"
+			font = "vic_18"
 			text = "MANAGE_OCCUPIED_TERRITORIES"
 			alwaystransparent = yes
 		}
@@ -530,7 +528,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "show_subjects_button_text"
 			position = { x = -130 y = 398 }
-			font = "hoi_16mbs"
+			font = "vic_18"
 			text = "MANAGE_SUBJECTS"
 			Orientation = "UPPER_RIGHT"
 			alwaystransparent = yes
@@ -548,7 +546,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "manage_exiled_governments"
 			position = { x = 223 y = 398 }
-			font = "hoi_16mbs"
+			font = "vic_18"
 			maxWidth = 130
 			maxHeight = 20
 			fixedsize = yes
@@ -598,8 +596,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 70 y = 14 }
-			font = "hoi_20b"
+			position = { x = 70 y = 12 }
+			font = "vic_22"
 			text = "Government"
 			maxWidth = 300
 			maxHeight = 20
@@ -634,7 +632,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "title"
 			position = { x = 0 y = 4 }
-			font = "hoi_20b"
+			font = "vic_22_black"
 			text = "Economic Laws"
 			maxWidth = 450
 			maxHeight = 20
@@ -643,7 +641,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 0 y = 26 }
-			font = "hoi_18b"
+			font = "vic_22_black"
 			text = "Switch out Henschel"
 			maxWidth = 450
 			maxHeight = 20
@@ -804,7 +802,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 66 y = 10 }
-			font = "hoi_18mbs"
+			font = "vic_22"
 			fixedsize = yes			
 			text = "name"
 			maxWidth = 160
@@ -825,7 +823,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "cost"
 			position = { x = 80 y = 47 }
-			font = "hoi_16mbs"
+			font = "Arial12"
 			text = ""
 			maxWidth = 142
 			maxHeight = 10
@@ -868,8 +866,8 @@ guiTypes = {
 			
 		instantTextboxType = {
 			name = "name"
-			position = { x = 82 y = 4 }
-			font = "hoi_16mbs"
+			position = { x = 82 y = 3 }
+			font = "vic_18_black"
 			text = "party name"
 			fixedsize = yes
 			maxWidth = 170
@@ -884,8 +882,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "trait"
-			position = { x = -16 y = 0 }
-			font = "hoi_16mbs"
+			position = { x = -16 y = 3 }
+			font = "vic_18"
 			fixedsize = yes
 			text = ""
 			format = center
@@ -897,8 +895,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "manage_subjects_window"
-		position = { x = -356 y = 80 }	
-		show_position = { x = 537 y = 80 }
+		position = { x = -356 y = 148 }	
+		show_position = { x = 537 y = 148 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -913,7 +911,7 @@ guiTypes = {
 		
 		containerWindowType = {
 		    name = "subject_items_window"
-		    position = { x = -356 y = 78 }	
+		    position = { x = -356 y = 148 }	
 		    show_position = { x = 2 y = 37 }
 		    show_animation_type = decelerated
 		    hide_animation_type = accelerated
@@ -959,7 +957,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "manage_occupied_title"
 			position = { x = 37 y = 5 }
-			font = "hoi_36header"
+			font = "vic_36"
 			borderSize = {x = 0 y = 0}
 			text = "MANAGE_SUBJECTS_HEADER"
 			maxWidth = 340
@@ -1080,8 +1078,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "exiles_window"
-		position = { x = -356 y = 80 }	
-		show_position = { x = 537 y = 80 }
+		position = { x = -356 y = 148 }	
+		show_position = { x = 537 y = 148 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -1096,7 +1094,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "exile_items_window"
-			position = { x = -356 y = 78 }	
+			position = { x = -356 y = 148 }	
 			show_position = { x = 2 y = 37 }
 			show_animation_type = decelerated
 			hide_animation_type = accelerated
@@ -1336,8 +1334,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "manage_occupied_window"
-		position = { x = -356 y = 80 }	
-		show_position = { x = 537 y = 80 }
+		position = { x = -356 y = 150 }	
+		show_position = { x = 537 y = 150 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -1359,7 +1357,7 @@ guiTypes = {
 		
 		buttonType = {
 				name = "close_button"
-				position = { x = -42 y = 5 }
+				position = { x = -42 y = 6 }
 				quadTextureSprite ="GFX_closebutton"
 				buttonFont = "hoi_16mbs"
 				shortcut = "ESCAPE"
@@ -1370,8 +1368,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "manage_occupied_title"
-			position = { x = 35 y = 3 }
-			font = "hoi_36header"
+			position = { x = 35 y = 5 }
+			font = "vic_36"
 			borderSize = {x = 0 y = 0}
 			text = "MANAGE_OCCUPIED_TERRITORIES_HEADER"
 			maxWidth = 340
@@ -1381,7 +1379,7 @@ guiTypes = {
 		
 	containerWindowType = {
 		name = "occupied_entries_window"
-		position = { x = -356 y = 78 }	
+		position = { x = -356 y = 148 }	
 		show_position = { x = 2 y = 37 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -1421,7 +1419,7 @@ guiTypes = {
 			name = "release"
 			position = { x = 323 y = 36 }
 			quadTextureSprite = "GFX_sort_button_171x35"
-	 		buttonFont = "hoi_18mbs"
+	 		buttonFont = "vic_22"
 			Orientation = "UPPER_LEFT"
 			buttonText = "RELEASE"
 			}
@@ -1444,7 +1442,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "occupied_country_name"
 			position = { x = 100 y = 24 }
-			font = "hoi_18mbs"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 200
 			maxHeight = 20
