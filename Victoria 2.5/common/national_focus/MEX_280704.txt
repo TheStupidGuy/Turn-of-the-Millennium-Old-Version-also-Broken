@@ -1,0 +1,80 @@
+focus_tree = {
+	id = 280704
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEX
+		}
+	}
+	#Focus for Defeat
+	focus = {
+		id = MEX_defeat
+		icon = GFX_goal_generic_forceful_treaty
+		x = 5
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_ensuringthesupplyline }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Victory
+	focus = {
+		id = MEX_victory
+		icon = GFX_goal_generic_attack_allies
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_ensuringthesupplyline }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tejas question
+	focus = {
+		id = MEX_tejasquestion
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_stateoftheempire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for State of the Empire
+	focus = {
+		id = MEX_stateoftheempire
+		icon = GFX_focus_mex_redeem_aztlan
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ensuring the supply line
+	focus = {
+		id = MEX_ensuringthesupplyline
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_tejasquestion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
