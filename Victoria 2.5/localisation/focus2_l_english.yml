@@ -52,8 +52,7 @@
  NeighborWar:0 "War with $TARGET"
  _Summit:0 "Call for the $TARGET Summit"
  Alliance_:0 "Alliance with $TARGET"
- GP_War:0 "War with $TARGET"
- l_english: 
+ GP_War:0 "War with $TARGET" 
 MEX_defeat:0 "Defeat"
 MEX_defeat_desc:0 "After their capture of the San Ana, we must recognize the nation"
 MEX_victory:0 "Victory"
